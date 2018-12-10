@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<head>
+    <title align="center">Notes</title>
+</head>
+
+<html>
+<body>
+    <div class="b-notes b-block">
+        <div class="b-note">
+            <p align="center">
+                HI <% username %> !, <a href="/logout">Log out</a>
+            </p>
+            <p align="center">
+                My notes
+            <% FOR t IN my_notes %><div align="center" class="single_line"><a href="<% t.ref %>"><% t.title %></a></div><% END %>
+            </p>
+            <p align="center">
+                Friend's notes for me :)
+            </p>
+            <p align="center">
+                <% FOR t IN other_notes %><div align="center" class="single_line"><a href="<% t.ref %>"><% t.title %></a></div><% END %>
+            </p>
+    <h3 align="center"><a href="/add">Add Note</a></h3>
+</body>
+</html>
+          

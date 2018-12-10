@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<h3> "<% title %>"</h3>
+<div class="show_paste">
+    <ol>
+    <% FOR t IN text %><li class="li_paste"><div class="single_line"><% t %></div></li><% END %>
+    </ol>
+</div>
+<% IF id %>
+<form method="GET" action="\remove" align="center">
+    <p><input type="submit" value="Remove" /></p>
+    <input type="hidden" value= "<% id %>" name="id"/>   
+</form>
+<form method="GET" action="\edit" align="center">
+    <p><input type="submit" value="Edit" /></p>
+    <input type="hidden" value= "<% id %>" name="id"/>  
+</form>
+<% END %>

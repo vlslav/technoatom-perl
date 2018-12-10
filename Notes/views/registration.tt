@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<body>
+	<div class="b-auth b-block">
+		<h2 align = "center">Registration</h2>
+    <% IF err %><h2 align ="center" class=error><strong>Error:</strong> <% err %><% END %></h2>
+<form method="POST" action="" align = "center">
+<div class = "b-note">
+	<label for="username">Username:</label>
+	<input type="text" placeholder="Email or username" name="username">
+</div>
+<div class = "b-note">
+	<label for="password">Password:</label>
+	<input type="password" 	placeholder="Password" name="password">
+</div>
+	<input id="login" type="submit" value="Sign Up" />
+</div>
+</form>
+</div>
+</body>

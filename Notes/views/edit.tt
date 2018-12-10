@@ -1,0 +1,11 @@
+<!DOCTYPE HTML>
+    <div class="b-note-creation b-block">
+        <h2 align="center">Edit note</h2>
+        <% IF err %><h2 align ="center" class=error><strong>Error:</strong> <% err %><% END %></h2>
+        <form method="POST" action="" align="center">
+            <p><input type="title" name="title" placeholder="title" value="<% title %>"/></p>
+            <p><textarea name="text" placeholder="text"  ><% FOR t in text %><% t %><% END %></textarea></p>
+            <input type="hidden" value = "<% id %>"/>
+            <p><input type="submit" value="Edit"  /></p>
+        </form>
+</div>
